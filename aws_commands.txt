@@ -11,4 +11,5 @@ RDS
 sms
 sqs
 vpc
-
+lambda
+one more
