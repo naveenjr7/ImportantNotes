@@ -1,0 +1,51 @@
+use mydb;
+
+db.createCollection("myCollection");
+
+db.myCollection.insert({name:'naveen'});
+
+db.myCollection.drop();
+
+db.myCollection.find().pretty();
+
+db.myCollection.find();
+
+db.myCollection.findOne(); --to find the first record in the criteria
+
+db.myCollection.find({name:'naveen'});
+
+db.myCollection.find({},{name:1,code:1,_id:0}); --to find particular attribute(Projection)
+
+db.myCollection.find({age:{$gt :'14'}});   [lte,eq,lt,gte,ne]
+
+db.myCollection.find( { $or : [{name:'naveen'},{age:'12'}]});
+
+db.myCollection.find( {name:'naveen', $or : [{name:'naveen'},{age:'12'}],age:'34'});
+
+db.myCollection.update(
+{ "_id":ObjectId("5fa5addba60494a8c5c0e969")},
+{$set :{address:'Nambiyur'}}
+);   -- for multi row update use {mutli:true};
+
+db.myCollection.save(
+{'_id':3424,name:'orbitera',provider:'aws',code:35}
+);  -- will update if there is already record exist with id else it will create record
+
+
+db.myCollection.remove(
+{
+    name:'naveen'
+});  -- use 1 to remove only one record
+
+db.myCollection.find().limit(2);
+
+db.myCollection.find().skip(2);
+
+db.myCollection.find().sort({name:1});
+
+db.myCollectin.ensureIndex({name:1});
+
+for(i=0;i< 150;++i)
+ {
+     db.sample.insert({id:i,name:"naveen"+i})
+  };

@@ -1,0 +1,11 @@
+	netstat -ano | findstr   :<PORT>
+taskkill /PID PID /F
+jar xf myFile.jar
+nslookup
+netstat
+TELNET
+ROUTE
+PATHPING
+TRACERT
+PING
+ARP -a

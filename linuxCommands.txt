@@ -1,0 +1,49 @@
+ls -l                        -list all files with details
+ls -R                        -list information with sub directory
+ls -al                       - list hidden files
+whoami
+whereis
+uname -a
+sudo bash    
+sudo useradd username
+sudo passwd username
+sudo userdel username
+sudo groupadd groupname
+sudo groupdel groupname
+diff filename1 filename2
+grep                        -to search
+grep -i                     -case insensitive
+grep -n                     - matches with line number
+grep -c                     - no of lines matched
+sort 
+chown
+chmod 777 filename
+chmod u=wrx,g=wr,o=x filename
+lsof
+lsof -u username            -to find list of files used by particular username
+id
+tar -cvf filename sourceFold - to zip file
+tar -xvf  tarfile            - to unzip file
+cut -c1-2 filename           -to cut particular column where 1-2 is 1 to 2 column
+sed 's/oldvalue/newvalue/' fillename - to replace value
+df -h                        - to see folders which used most space
+free
+free -h                      -for readable format
+locate                       - to search for anyfile
+find  
+alias aliasname="value"(~/.bashrc)
+ssh ipaddress
+ifconfig
+netstat
+nslookup
+curl
+env
+ps
+kill
+ps -ef | grep jarname 
+kill -9 pid 
+head -n 4 filename       - used to fetch first n lines from file (where 4 is total no of lines wanted)
+tail -n 3 filename       - used to fetch last n lines from file (where 3 is total no of lines wanted)
+./filename or sh filename - to run the shell script
+wc -m -c -l -L -w         - or list of useful options for wordcount or number of lines
+

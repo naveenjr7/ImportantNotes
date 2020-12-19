@@ -1,0 +1,30 @@
+http smuggling 
+transparent proxy
+level 4 lb
+level 7 lb
+http 1.1 and http 2
+tcp handshake
+tcp and udp
+reverse proxy and proxy
+http2(multiplexing) with streamId
+online,fast3g and slow 3g in network developer tool for performance review
+Nginx
+ssl and ssh
+Address Resolution Protocol (ARP) and (RARP) Reverse ARP
+Dynamic Host Configuration Protocol(DHCP)
+Internet Control Message Protocol(ICMP)
+BGP
+CIDR AND CIDR notation	
+VLSM(Variable Length SubnetMask)
+Network Address Translation - NAT
+port forwarding
+Transport Layer Security (TLS)
+Network Interface Card(NIC) responsilble for MAC(Media Access Control) which depends on  OUI (Organizational Unique Identifier
+OSI Layer(segments->packets->frames->bits)
+PDU(Protocol Data Unit)
+TCP windowing
+subnetMask Network(2 power n)
+subnetMask Host(2 power n-2)
+TCP open fast
+CDN
+AES

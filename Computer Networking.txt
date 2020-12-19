@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=QKfk7YFILws
+
+
+copper and optic fibre(modes of transmission in physical layer)
+cat5,ct5e,cat6 are types of coppper cables
+hub-layer 7
+switch-layer 6
+router-layer 5
+RJ45 jack(Link LED and Activity LED)
+CSMA/CD technique in hub
+data packets in ethernet layer is called Ethernet Frames.Its structure is below
+   preanble(8):Destination Address(da)(6):SA(6):VLAN TAG(4):TYPE(2):PAYLOAD(0-1500),FCD(4 BYTES)
+   
+network id,hostid,subnetid(from subnetmask)(parts of ip address)
+CIDR
+Routing Table
+  1.Interior Gateway protocol
+  2.Exterior Gateway protocol
+IANA

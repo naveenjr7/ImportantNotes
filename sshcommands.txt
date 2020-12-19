@@ -1,0 +1,13 @@
+ssh root@ip(by default port number is 22)
+ssh -p portnumber root@ip
+ssh-keygen
+ssh-keygen -t algorthimtype
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@ipaddres
+ eval "$(ssh-agent)"
+ ssh agent for storing data in server(i.e in desktop it will be default running)
+ systemctl status sshd
+ systemctl restart sshd
+ systemctl stop sshd
+
+config file inside .ssh folder for hostname matching
+authorised_keys inside ..sh folder is for saving public key

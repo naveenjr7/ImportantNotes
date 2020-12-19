@@ -1,0 +1,4 @@
+ec2-user  -- to login into ec2
+sudo su   --  or super user
+yum install wget
+sudo yum install java-1.8.0

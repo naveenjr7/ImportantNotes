@@ -1,0 +1,19 @@
+Docker Architecture
+   Docker cli ----> Docker Demon inside Docker Engine  ----> Docker Image ---> Docker Container ---> Docker Registry(which stores images)
+
+Commands
+	docker --version
+	docker info
+	docker pull imagename
+	docker images
+	docker run -it -d imagename
+	docker run hello-world(for testing)
+	docker ps(to know running docker containers)
+	docker ps -a
+	docker exec -it containerid bash(to go inside container)
+	docker stop containerid
+	docker kill containerid
+	docker rm containerid
+	docker rmi imageid
+	docker commit
+	docker login
