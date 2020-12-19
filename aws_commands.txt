@@ -2,3 +2,13 @@ ec2-user  -- to login into ec2
 sudo su   --  or super user
 yum install wget
 sudo yum install java-1.8.0
+
+ec2
+s3
+route53
+cloudwatch
+RDS
+sms
+sqs
+vpc
+lambda
