@@ -1,6 +1,7 @@
 git help {{name}} (or) git {{name}} --help                            -to get help
 git add .                                                             -to add all files
 git commit -m "comments"                                              -to commit files
+git commit -a -m "comments"                                           -to skip add command and directly commit files
 git init
 git status
 git diff
@@ -24,10 +25,10 @@ git remote add origin {{repository url}}                              -connect t
 git clone {{repository url}}                                          -clone files from remote to local repository
 git pull origin main                                                -to pull files from remote to local repository
 git push origin main                                                -to push files from local to remote repository
-git stash                                                             -to stash the files 
+git stash save 'name'                                                -to stash the files 
 git stash list
 git stash show
-git stash apply
+git stash apply stashid
 git log --before={{Date}}
 git log --author={{name}}
 git revert
