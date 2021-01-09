@@ -3,6 +3,7 @@ Non-Static Inner Class:
   2)Can have not-static variables and functions(i.e there should not be any static inside)
   3) Non-static classes are allowed inside methods 
   4)Object Creation : 		InnerClass ic = new MainClass().new InnerClass();
+  5) inner class can be private
 
 Static Inner Class:
   1)Accept outerclass static,private variables and methods 
@@ -10,3 +11,4 @@ Static Inner Class:
   3)Like normal static class methods,inner class static methods are accessible without object creation but instance variable and methods are accessible only by innerclass Object
   4)There is no static class inside method
   5)Object Creation : 		InnerClass ic = new MainClass.InnerClass();
+  6)static inner class can be private

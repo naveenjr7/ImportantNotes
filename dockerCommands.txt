@@ -17,3 +17,6 @@ Commands
 	docker rmi imageid
 	docker commit
 	docker login
+	docker search imagename
+	docket search --filter starts=3 imagename(search with filter)
+	docket search -f starts=3 imagename(search with filter)(same as above but shorthand)
