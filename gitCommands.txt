@@ -20,8 +20,10 @@ git branch -d branchName                                              -alert if 
 git branch -D branchName                                              -dont alert if any uncommit files
 git checkout -b branchName                                            -alternate way of creating branch and does checkout in the same time
 git remote -v                                                         -to view all remote repository
+git remote rm origin                                                  -to remove the remote origin
 git push --set-upstream origin master 
-git remote add origin {{repository url}}                              -connect to remote repository
+git remote add origin {{repository url}}                              -connect to remote repository  (or)
+git remote set-url origin  https://github.com/naveenjr7/music1        -to override existing remote repo
 git clone {{repository url}}                                          -clone files from remote to local repository
 git pull origin main                                                -to pull files from remote to local repository
 git push origin main                                                -to push files from local to remote repository
