@@ -1,0 +1,41 @@
+
+Steps on how ssl works:
+    1) Create private and public key for your domain
+	2) server web send Certificate Signing Request with public key to CA (Certificate Authority).
+	3) CA will sign certificate with their Private key and send the certificate with their public key.
+	4) The CA certificate will also contain its certificate provider info till the point it reaches ROOT CERTIFICATE AUTHORITY.It forms a certificate chain.
+	5) Most of the Root Certificates are already installed in Web Browsers.
+	
+Once its done following things happen for TLS 1.2 handshake
+    1)Client sends a message to verify itself with server having browser supports,alogithm and other stuff.
+	2)Server in turn will sent the certificate.
+	3)Then Client will check the certificate and create premaster key(symmetric key) with servers public key and encryts it.Client will get servers public key from its certificate.
+    4)Then server will decrypt the pre master key withits private key.
+    5)At the end tls handshake is completed , client and server will communicate with the pre master key.
+
+diffie Hellman algorithim is important which is for TLS 1.3
+
+TO create priate key and certificate
+
+	openssl  genrsa -des3 -out rootCA.key 2048
+	openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out rootCA.pem
+	
+	or
+	
+	keytool -genkeypair -alias tomcat -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650 -storepass password
+    keytool -list -v -storetype pkcs12 -keystore keystore.p12
+
+
+	TO MOVE FILE FROM EC2 = S3
+
+	apt-get install awscli
+
+	aws s3 cp rootCA.pem s3://letscompletetodayimagestorage/Images
+
+
+Windows Setup:
+ 
+  1) Go to Internet Information Service Manager -> Server Certificate -> Create Self Signed Certificate  -> give certificate name - >ok.
+  
+  2) Sites -> Default Web Site -> Bindings -> Add ->ok.
+  

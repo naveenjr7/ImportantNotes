@@ -1,0 +1,22 @@
+Swagger for Spring boot:
+  1)/v2/api-docs ->for viewing documentation
+  2)/swagger-ui  ->for swagger UI
+  
+ Annotations:
+   1)EnableSwagger
+   2)Apioperations
+   3)api param
+   4)api model
+   5)api model properties
+   2)use docket to configure the details
+   
+   example:
+   public ApiInfo(
+      String title,
+      String description,
+      String version,
+      String termsOfServiceUrl,
+      Contact contact,
+      String license,
+      String licenseUrl,
+      Collection<VendorExtension> vendorExtensions)

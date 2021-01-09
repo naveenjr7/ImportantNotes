@@ -1,0 +1,51 @@
+check whether server is running by command 'PING'
+
+DataTypes:
+   1)Strings
+   2)Lists
+   3)Sets
+   4)Sorted Sets
+   5)Hashes
+   6)Bitmaps
+   7)Hyperlogs
+   8)Geospatial Index
+
+Queries for string:
+ set key value (set name naveen)
+ incr integerkeyname
+ decr integerkeyname
+ exists keyname
+ flushall
+ expire keyname timeduration (expire name 50) where 50 is secs
+ setex keyname timeduration value(to set expire at time of creation)
+ TTL keyname(to see how much time left to expire);
+ persist keyname(to persist the expiring data)
+ mset keyname1 value1 keyname2 value2(mset for multiple set)
+ append keyname "value" 
+ rename keyname newkeyname
+ 
+queries for list
+ lpush listname value (insert in the beginning)
+ rpush listname value (insert at bottom)
+ lrange listname 0 5
+ llen listname (to find length)
+ lpop listname
+ rpop listname
+ linsert listname before firstvalue secondvalue
+ 
+Set queries
+ sadd setname value
+ sismember setname value
+ smembers setname
+ scard setname(size)
+ srem setname value(to remove)
+ smove setname1 sertname2 value
+ sdiff setname1 setname2
+ spop setname
+
+Hash queries
+ hset hashname keyset value
+ hgetall hashname 
+ 
+ 
+ 

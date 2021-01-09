@@ -1,0 +1,13 @@
+sqlplus / as SYSDBA
+show con_name;
+ALTER SESSION SET CONTAINER = orclpdb;
+ALTER PLUGGABLE DATABASE OPEN;
+ALTER USER HR IDENTIFIED BY HR ACCOUNT UNLOCK;
+CONN hr/hr@orclpdb
+
+column name format a20;
+select name,open_mode from v$pdbs;
+
+
+user_cons_columns;
+user_Constraints;

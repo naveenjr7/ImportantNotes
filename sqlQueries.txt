@@ -1,0 +1,53 @@
+
+SET SQL_SAFE_UPDATES = 0;  for update without primary key
+
+SET GLOBAL log_bin_trust_function_creators = 1;
+
+DETERMINISTIC ,NON-DETERMINISTIC,READS SQL DATA,MODIFIES SQL DATA,NO SQL ,CONTAIN SQL are types of function 
+
+Datatypes:
+   1)tinyint,smallint,mediumint,int,bigint,bit,float,double
+   tinyint is used as alternative for boolean.tinyint(m) where m is display range its used when zerofill is added to column.
+   
+show procedure status	
+ GENERATED ALWAYS AS (CONCAT(first_name,' ',last_name)),
+ SELECT * FROM table_name ORDER BY RAND() LIMIT 1;
+ SET GLOBAL log_bin_trust_function_creators = 1;
+ show create table tablename;
+ rename table old_tabname to new_tabname
+ alter table tablename drop column columnname
+ alter table tablename add columnname datatype
+ alter table tablename rename column old_Colname to new _colname
+ alter table tablename add constraint constraint_Name primary key(columnname)
+ alter table tablename add constraint constraint_Name foreign key(columnname) references parenttable(parenttablecolumn)
+ 
+ uuid()
+ now()
+ curdate();
+ nullif()
+ bin()  ->to convert decimal to binary equivalent
+ sin()  -> to find sin value
+ select last_day(curdate()+ interval 1 month);
+group_concat([distinct] columnname [order by clause][separator])  -> group_concat(distinct name order by id separator ',');
+SET [GLOBAL | SESSION] group_concat_max_len                       = value -> to change the size of group_concat
+
+rows between unbounded preceding and unbounded following  -[by default it will be in rows between unbounded preceding and current row ]
+rows between 1 preceding and 1 following
+difference between rows and range.(they differ in duplicate scenario.rows will calculate by each row as usual but renge will have same value for all duplicate rows).
+
+set transaction isolation level  read uncommitted
+SET autocommit = 0 or SET autocommit = off;
+SET autocommit = 1  or SET autocommit = on;
+start transaction
+rollback 
+commit
+
+ON DELETE NO ACTION ON UPDATE NO ACTION
+ON DELETE CASCADE ON UPDATE CASCADE,
+ON DELETE set null ON UPDATE SET NULL,
+
+
+having clause can use aggregate function but not where clause
+having clause can be used only in select statement but where clause can be used in select,update,insert
+
+CREATE TEMPORARY TABLE temp_table_name SELECT * FROM original_table LIMIT 0;
