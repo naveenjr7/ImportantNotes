@@ -6,7 +6,7 @@ git init
 git status
 git diff
 git reset                                                             -to remove files from staging area and place it in working directory                                                   
-git config --list
+git config --list (or) git config -list
 git config --global user.name="naveen"
 git config --global user.email="cnaveenchidambaram@gmail.com"         -(globally)
 git config  user.email="cnaveenchidambaram@gmail.com"                 -(locally)
@@ -40,6 +40,11 @@ git push origin --delete branchName
 git remote set-url origin https://github.com/letscompletetoday/chat-app-java-backend.git -to change remote repository
 git remote add origin https://github.com/letscompletetoday/Testing.git -to change remote repository
 git clone https://github.com/letscompletetoday/Testing.git             - to clone into local repo
+git credentials uninstall
+git credentials install
+git config --global credential.helper 'store'                          -to store locally
+git config --global credential.helper 'cache'                          -to cache for particular session
+git config --global credential.helper 'cache --timeout=600'            -for particular time
 
 
 create .gitignore file to avoid files we don't want
