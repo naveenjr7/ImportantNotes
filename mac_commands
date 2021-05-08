@@ -1,0 +1,31 @@
+Shortcuts:
+
+Ctrl + r = run mode
+Ctrl + d =debug mode
+Cmd + delete = delete current line
+Cmd  + shift + arrow = to toggle current line up and down
+Ctrl + enter = auto complete
+Cmd + d =duplicate
+Cmd + shift + O - search for particular file
+Cmd  + f =search particular key in a file
+Cmd + shift + f = search particular key in project 
+Cmd  + e =most recent files
+Cmd + b = to open declaration 
+Cmd + 1  = switch between editors
+CMD + / = to toggle between commands
+Opt + cmd +v = auto assign variable name
+Opt + enter = create method based on declaration
+Cmd + shift + delete = last edit location
+Cmd + [ = got to last cursor position
+Cmd + ] = redo last cursor position
+Cmd + comma = settings 
+Cmd  + ;   = runtime jdk
+Opt + cmd + L = format code
+Ctrl + space.    = suggestion
+Cmd + 4.          = toggle between run 	console
+Cmd + 5  = toggle between debug console
+shift+ shift.      =search multiple 
+Ctrl +cmd + f =full screen
+cmd+ L =go to particular line
+ctrl 
+F2     = to go to error
