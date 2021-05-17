@@ -1,0 +1,64 @@
+Git 
+
+nov@2020123 , press I for edit in vim
+Git log —all —decorate —oneline —graph
+ Git checkout —track origin/master - to avoid confusion between upstream and origin
+   Else add below in config file
+    [checkout]
+      defaultRemote = origin or upstream. [whatever you want]
+ Git fetch origin
+ Git diff —name-only
+ git diff master~1 requiredfile requriedchangedfile
+ Git tag tag name - to tag the logic
+ Git restore —staged filename
+ Git merge origin/master
+ Git pull —rebase upstream master
+ Git rebase master
+ Git rebase —continue
+ git rebase —abort
+ Git pull = git fetch + git merge 
+ Git  commit -a -m  “message’ -to commit and add directly
+ Git diff firstBranch..secondBranch - to see diff between two branch
+ Git log — fileYouWantToSearch - to find the log of required file
+ Git checkout logId — filename  - to checkout required file from particular log
+ Git show-ref
+ Git push origin master
+ Git pull origin master
+ Git remote add upstream upstreamulr - to update your project with the project you forked
+ Git fetch upstream - to fetch the latest code from code fork Project 
+ Git merge upstream/branchName localBranchName
+ Git merge vs git merge —no-ff
+ Git push -u origin customBranchName 
+ git remote add origin git@github.com:User/UserRepo.git
+ git remote set-url origin git@github.com:User/UserRepo.git
+ Git remote remove remote name 
+ Git branch - to get local branches
+ Git clean -df - to remove untracked files
+ git reflog- to view our actions
+ Git Checkout commitID - detected branch to recollect deleted commit
+ Git revert commitId  - which do another commit to remove the not needed commit 
+ Git branch —merged - run the command to see what branch are in sync with master
+ Git merge branchName — to merge current with the required branch
+ Git branch -d branchName - to delete local branch
+ Git push origin —delete branch name - to delete remote branch
+ Git commit —amend -m ‘message’ - to commit again
+ Git cherry-pick commitId - to move commit from one branch to another
+ Git reset head .-to reset staging file changes
+ Git reset —soft commitId - to reset the	 wrong commit but remain staging area
+ Git reset commitId - default option - to reset the wrong commit but it will keep in working directory
+ Git reset --hard commitId - to reset the wrong commit but it will delete the changes completely but won’t delete the untracked files
+ Git stash save “message”
+ Git stash list
+ Git stash apply stash@{0}
+ Git stash pop
+ Git stash drop stash@{0}
+ Git stash clear - to remove all the stash 
+ git diff-tree –r {commit hash}
+ Git bisect
+Git add -A or Git add -it will add all(new, modified, deleted, hidden ) file to staging even when you are in child directory
+Git add -u.           - it will add only modified or updated file to the staging area
+Git add .               - it will add all files but from the current directory to child not its parent directory
+Git add *              - its not a recommended one because its more of bash related
+ Git checkout — .
+
+ 
